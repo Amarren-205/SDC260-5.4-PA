@@ -1,0 +1,219 @@
+/* =========================================
+     CYBER THEME PROVIDED
+     GROUND STANDBY + UPLINK MODES
+========================================= */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	min-height: 100vh;
+	transition: background-color .5s, color .5s;
+}
+
+/* =========================================
+     GROUND STANDBY MODE - OFFLINE
+========================================= */
+
+body.standby-mode {
+	background: #20242a;
+	color: #b9c4d6;
+}
+
+body.standby-mode header,
+body.standby-mode footer {
+	background: #171a1f;
+	border-color: #536273;
+}
+
+body.standby-mode section,
+body.standby-mode aside {
+	background: #292e36;
+	border-color: #536273;
+}
+
+body.standby-mode #hero {
+	background: #252b33;
+	box-shadow: 0 0 24px rgba(115, 145, 180, .15);
+}
+
+body.standby-mode #heroTitle {
+	color: #9db6d1;
+}
+
+body.standby-mode #heroText,
+body.standby-mode h2,
+body.standby-mode h3 {
+	color: #b9c4d6;
+}
+
+body.standby-mode nav a {
+	color: #91a9c4;
+}
+
+body.standby-mode button {
+	background: #536273;
+	color: #e4ebf4;
+	border: 1px solid #73859a;
+}
+
+/* =========================================
+     UPLINK MODE - ONLINE
+========================================= */
+
+body.uplink-mode {
+	background: #241b18;
+	color: #f1c9a8;
+}
+
+body.uplink-mode header,
+body.uplink-mode footer {
+	background: #181311;
+	border-color: #9c5f35;
+}
+
+body.uplink-mode section,
+body.uplink-mode aside {
+	background: #30231d;
+	border-color: #9c5f35;
+}
+
+body.uplink-mode #hero {
+	background: #34251e;
+	box-shadow: 0 0 28px rgba(230, 137, 65, .2);
+}
+
+body.uplink-mode #heroTitle {
+	color: #ffbd78;
+}
+
+body.uplink-mode #heroText,
+body.uplink-mode h2,
+body.uplink-mode h3 {
+	color: #f1c9a8;
+}
+
+body.uplink-mode nav a {
+	color: #ffb56e;
+}
+
+body.uplink-mode button {
+	background: #9c5f35;
+	color: #fff0e2;
+	border: 1px solid #d38a50;
+}
+
+header,
+footer {
+	padding: 1.5rem;
+	text-align: center;
+	border: 1px solid;
+}
+
+main {
+	max-width: 1000px;
+	margin: auto;
+	padding: 2rem;
+}
+
+section,
+aside {
+	padding: 2rem;
+	margin-bottom: 2rem;
+	border: 1px solid;
+	border-radius: 10px;
+}
+
+article {
+	margin-top: 1.5rem;
+	padding: 1rem;
+	border-left: 3px solid currentColor;
+}
+
+/* =========================================
+     NAV
+========================================= */
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	list-style: none;
+	margin-top: 1rem;
+}
+
+nav a {
+	text-decoration: none;
+	transition: .2s;
+}
+
+nav a:hover,
+nav a:focus {
+	text-decoration: underline;
+}
+
+/* =========================================
+     HERO
+========================================= */
+
+#hero {
+	text-align: center;
+	padding: 4rem 2rem;
+}
+
+#heroTitle {
+	font-size: 3rem;
+	letter-spacing: .08em;
+}
+
+#heroText {
+	margin-top: 1rem;
+	font-size: 1.1rem;
+}
+
+#connectionStatus {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* =========================================
+     BUTTONS
+========================================= */
+
+button {
+	margin-top: 1rem;
+	padding: 1rem 1.5rem;
+	cursor: pointer;
+	border-radius: 6px;
+	font-weight: bold;
+	transition: .2s;
+}
+
+button:hover,
+button:focus {
+	transform: translateY(-2px);
+}
+
+/* =========================================
+     RESPONSIVE
+========================================= */
+
+@media(max-width:768px) {
+	main {
+		padding: 1rem;
+	}
+
+	nav ul {
+		flex-direction: column;
+		gap: .75rem;
+	}
+
+	#heroTitle {
+		font-size: 2rem;
+	}
+}
